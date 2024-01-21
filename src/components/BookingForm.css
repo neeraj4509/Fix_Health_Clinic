@@ -1,0 +1,205 @@
+.booking-form {
+    position: absolute;
+    top: 70%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
+    z-index: 10; 
+    background-color: #333;
+    color: #fff;
+    max-width: 650px;
+    min-height: 230px;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+  }
+  
+.booking-form input, 
+.booking-form textarea, 
+
+.booking-form select {
+    background-color: #222;
+    color: #fff;
+    display: block; 
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 10px; 
+    border-radius: 5px;
+    border: 1px solid #444;
+    box-sizing: border-box;
+}
+
+.progress-indicators {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.booking-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .booking-form button:hover {
+    background-color: #0056b3;
+  }
+
+  .indicator {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #242421;
+    border-radius: 50%;
+    margin-right: 10px;
+  }                                     
+  
+  .indicator.completed {
+    background-color:#e9e1ca;
+  }
+  
+  .form-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .form-navigation button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e9e1ca;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .form-navigation button:hover {
+    background-color: #e9e1ca;
+  }
+  
+  .form-heading {
+    text-align: center;
+    color: #e9e1ca; 
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .booking-form {
+        box-sizing: border-box;
+        position: static; 
+        margin: 0.1px auto; 
+        left: auto;
+        transform: none;
+        width: 100%; 
+        max-width: 100%;
+    }
+  
+   
+    .hero-section {
+      height: auto;
+      width: 100%;
+    }
+
+    .hero-section img{
+      height: 450px;
+    }
+  }
+
+.head3{
+   text-align: center;
+}
+  
+
+.form-textarea{
+    height: 150px; 
+  width: 100%; 
+  resize: none;
+}
+
+.head4{
+  text-align: center;
+}
+
+.step4-container select {
+  color:#e9e1ca;
+  background-color:  #333;
+  font-size: 16px;
+}
+
+.step5-container {
+  position: relative; 
+  
+}
+
+.step5-container select {
+  color:#e9e1ca;
+  background-color:  #333;
+  font-size: 16px;
+}
+
+
+.step6-container {
+  position: relative; 
+  
+}
+
+.head6{
+  text-align: center;
+}
+
+.book-btn {
+  display: block;
+  margin: 5px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e9e1ca; 
+  color: #333;
+  cursor: pointer;
+  
+}
+
+.book-btn:hover {
+  background-color: #e9e1ca; 
+}
+
+
+.slots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  
+}
+
+.slot {
+  background-color: #222; 
+  color: #fff;
+  border: 1px solid #fff; 
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.slot.selected {
+  color: #333;
+  background-color: #e9e1ca;
+}
+
+.date-picker {
+  background-color: #222; 
+  color: #fff; 
+  border: 1px solid #444; 
+  padding: 10px;
+  margin-bottom: 20px; 
+  border-radius: 5px;
+}
+
+.confirmation-message{
+  padding-top: 40px;
+  text-align: center;
+}

@@ -1,13 +1,79 @@
+
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background: #121212;
+  color: #e0e0e0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1f1f1f; 
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li{
+  padding: 10px 20px;
+}
+
+
+nav ul li a {
+  color: #e0e0e0; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #bbbbbb; 
+}
+
+
+footer {
+  background-color: #1f1f1f; 
+  color: #e0e0e0;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.App {
+  padding: 20px;
+  min-height: 80vh; 
+}
+
+
+a, button {
+  cursor: pointer;
+}
+
+
+.center {
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
 }
