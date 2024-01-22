@@ -25,6 +25,7 @@ function BookingForm() {
     occupation: '',
     chiefComplaints: '',
     prevExperience: '',
+    prevExperienceDesc: '',
     selectedDoctor: '',
     consulationSlot: '',
   });
@@ -56,10 +57,23 @@ function BookingForm() {
       break;
     case 4:
       
-      if (parseInt(formData.age, 10) >= 40) {
-        canProceed = formData.prevExperience.trim() !== '';
-      } else {
-        
+    if (parseInt(formData.age, 10) >= 40) {
+      if (formData.prevExperience === 'yes') {
+        canProceed = formData.prevExperienceDesc.trim() !== ''; // Check if the description is provided
+        if (!canProceed) {
+          alert('Please provide details about your previous experience with physiotherapy.');
+          return;
+        }
+      }
+      else if (formData.prevExperience === 'no') {
+        canProceed = true;
+      }
+      else {
+        alert('Please select your previous experience with physiotherapy.');
+        return;
+      }
+      }
+      else {
         canProceed = true;
       }
       break;
