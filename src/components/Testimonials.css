@@ -38,6 +38,14 @@
   min-height: 130px;
 }
 
+.testimonial-image {
+  width: 70%; 
+  height: 210px; 
+  border-radius: 50%;
+  display: inline-block; 
+  vertical-align: middle; 
+}
+
 blockquote {
   font-style: italic;
   color:  #e9e1ca;
