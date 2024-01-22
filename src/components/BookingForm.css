@@ -10,7 +10,7 @@
     min-height: 230px;
     margin: 30px auto;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
     border-radius: 8px;
   }
   
@@ -175,8 +175,8 @@
 }
 
 .slot {
-  background-color: #222; 
-  color: #fff;
+  background-color: #333;
+  color: #e9e1ca;
   border: 1px solid #fff; 
   padding: 10px 20px;
   margin: 5px;

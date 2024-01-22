@@ -13,6 +13,7 @@ function Step4({ formData, setFormData }) {
           value={formData.prevExperience}
           onChange={(e) => setFormData({ ...formData, prevExperience: e.target.value })}
         >
+          <option value="">Select</option>
           <option value="yes">Yes</option>
           <option value="no">No</option>
         </select>

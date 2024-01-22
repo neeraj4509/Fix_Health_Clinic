@@ -33,6 +33,7 @@ function Step6({ formData, setFormData , onBookingComplete}) {
       <input
         type="date"
         className="date-picker"
+        min = {new Date().toISOString().split('T')[0]}
         onChange={(e) => setFormData({ ...formData, consultationDate: e.target.value })}
         value={formData.consultationDate}
       />
